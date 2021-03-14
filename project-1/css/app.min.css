@@ -20,13 +20,13 @@ input::placeholder {
     color: rgba(#fff, .5);
 }
 
-.component--container {
+.component--search {
     background: #3D3F43;
     border-radius: 15px;
     padding: 40px 45px;
 }
 
-.component--container h6 {
+.component--search h6 {
     font-weight: bold;
     color: #fff;
     font-size: 12px;
@@ -34,11 +34,11 @@ input::placeholder {
     letter-spacing: 1px;
 }
 
-.component--container ul {
+.component--search ul {
     margin-top: 13px;
 }
 
-.component--container li a {
+.component--search li a {
     display: block;
     font-size: 16px;
     text-decoration: none;
@@ -46,22 +46,22 @@ input::placeholder {
     padding: 7px 0;
 }
 
-.component--container li a:hover {
+.component--search li a:hover {
     color: #2CCDEA;
     font-weight: bold;
 }
 
-.component--container ul li .active {
+.component--search ul li .active {
     color: #2CCDEA;
     font-weight: bold;
 }
 
-.component--container form {
+.component--search form {
     position: relative;
     margin-bottom: 30px;
 }
 
-.component--container form .search-icon {
+.component--search form .search-icon {
     position: absolute;
     top: 0;
     left: 0;
@@ -72,6 +72,6 @@ input::placeholder {
     align-items: center;
 }
 
-.component--container form input {
+.component--search form input {
     padding-left: 53px;
 }
