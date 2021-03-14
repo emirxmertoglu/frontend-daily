@@ -1,0 +1,77 @@
+@import "reset.css";
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap');
+
+body {
+    background: #303236;
+    font-family: 'Mulish', sans-serif;
+}
+
+input {
+    height: 50px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    background: #303236;
+    font-size: 16px;
+    color: #fff;
+}
+
+input::placeholder {
+    color: rgba(#fff, .5);
+}
+
+.component--container {
+    background: #3D3F43;
+    border-radius: 15px;
+    padding: 40px 45px;
+}
+
+.component--container h6 {
+    font-weight: bold;
+    color: #fff;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.component--container ul {
+    margin-top: 13px;
+}
+
+.component--container li a {
+    display: block;
+    font-size: 16px;
+    text-decoration: none;
+    color: #fff;
+    padding: 7px 0;
+}
+
+.component--container li a:hover {
+    color: #2CCDEA;
+    font-weight: bold;
+}
+
+.component--container ul li .active {
+    color: #2CCDEA;
+    font-weight: bold;
+}
+
+.component--container form {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.component--container form .search-icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 53px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.component--container form input {
+    padding-left: 53px;
+}
