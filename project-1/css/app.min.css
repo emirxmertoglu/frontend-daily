@@ -6,7 +6,8 @@ body {
     font-family: 'Mulish', sans-serif;
 }
 
-input {
+/* first component */
+.component--search input {
     height: 50px;
     width: 100%;
     border: none;
@@ -16,7 +17,7 @@ input {
     color: #fff;
 }
 
-input::placeholder {
+.component--search input::placeholder {
     color: rgba(#fff, .5);
 }
 
@@ -74,4 +75,69 @@ input::placeholder {
 
 .component--search form input {
     padding-left: 53px;
+}
+
+/* second component */
+.component--filter-search {
+    background: #3D3F43;
+    border-radius: 5px;
+}
+
+.component--filter-search form {
+    height: 68px;
+    padding: 14px;
+    display: flex;
+}
+
+.component--filter-search form .input {
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+
+.component--filter-search form .input .search-icon {
+    width: 50px;
+    text-align: center;
+}
+
+.component--filter-search form .input input {
+    width: 100%;
+    height: 40px;
+    background-color: transparent;
+    border: none;
+    font-size: 16px;
+    color: #fff;
+}
+
+.component--filter-search form .input input:focus {
+    outline: 0;
+}
+
+.component--filter-search form .input input::placeholder {
+    color: rgba(#fff, .5);
+}
+
+.component--filter-search form ul {
+    display: flex;
+}
+
+.component--filter-search form ul li label input{
+    display: none;
+}
+
+.component--filter-search form ul li label input:checked + .text {
+    background-color: #303236;
+    border-radius: 20px;
+    color: #2CCDEA;
+}
+
+.component--filter-search form ul li label .text {
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    color: #fff;
+    padding: 0 25px;
+    margin: 14px 0;
+    cursor: pointer;
 }
