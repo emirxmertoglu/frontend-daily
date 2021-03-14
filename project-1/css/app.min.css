@@ -25,6 +25,7 @@ body {
     background: #3D3F43;
     border-radius: 15px;
     padding: 40px 45px;
+    box-shadow: 0 15px 25px -20px #202125;
 }
 
 .component--search h6 {
@@ -127,12 +128,13 @@ body {
 
 .component--filter-search form ul li label input:checked + .text {
     background-color: #303236;
-    border-radius: 20px;
+    
     color: #2CCDEA;
 }
 
 .component--filter-search form ul li label .text {
     display: block;
+    border-radius: 20px;
     height: 40px;
     line-height: 40px;
     font-size: 16px;
@@ -140,4 +142,87 @@ body {
     padding: 0 25px;
     margin: 14px 0;
     cursor: pointer;
+    transition: 400ms background-color, 400ms color;
+}
+
+/* third component */
+.component--filter {
+    background: #3D3F43;
+    border-radius: 15px;
+    padding: 40px 45px;
+    box-shadow: 0 15px 25px -20px #202125;
+}
+
+.component--filter form ul li {
+    display: flex;
+    align-items: center;
+}
+
+.component--filter form ul li:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.component--filter form ul li .key {
+    width: 100px;
+    font-weight: bold;
+    font-size: 16px;
+    color: #fff;
+}
+
+.component--filter form ul li .value {
+    flex: 1;
+}
+
+.component--filter form ul li .value input, select {
+    width: 100%;
+    height: 50px;
+    background: #303236;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #fff;
+    padding: 0 20px;
+}
+
+.component--filter form ul li .value input:focus {
+    outline: 0;
+}
+
+.component--filter form ul li .value select {
+    appearance: none;
+    cursor: pointer;
+    background-image: url(../img/arrow-down.svg);
+    background-repeat: no-repeat;
+    background-position: calc(100% - 30px) center;
+}
+
+.component--filter form ul .filter-button {
+    margin-top: 40px;
+    border-top: 1px solid #303236;
+    padding-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.component--filter form ul .filter-button button {
+    height: 50px;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(to right, #31A5D9, #1E96A0);
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 50px;
+    box-shadow: 0 7px 10px -5px rgba(43, 45, 48, 0.6);
+}
+
+.component--filter form ul .filter-button a {
+    color: rgba(255, 255, 255, .5);
+    text-decoration: none;
+}
+
+.component--filter form ul .filter-button a:hover {
+    color: #fff;
 }
