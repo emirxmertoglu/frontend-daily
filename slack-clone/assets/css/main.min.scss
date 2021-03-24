@@ -4,36 +4,124 @@
 }
 
 body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+        "Helvetica Neue", sans-serif;
+    height: 2000px;
     background-color: #f6efe8;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
 }
 
-header {
+.header {
     width: 100%;
-    max-height: 80px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    .logo {
-        padding: 27px 25px;
-        img {
-            width: 100px;
-            height: auto;
-        }
+    background-color: #f6efe8;
+    @media screen and (max-width: 768px) {
+        margin-left: 10px;
+        margin-right: 10px;
     }
-    .navigation {
-        ul {
+    &-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 1230px;
+        margin-left: auto;
+        margin-right: auto;
+        max-height: 80px;
+        padding-left: 35px;
+        padding-right: 35px;
+        @media screen and (max-width: 768px) {
+            padding-left: 35px;
+            padding-right: 35px;
+        }
+        .logo {
+            padding: 27px 25px;
+            img {
+                width: 100px;
+                height: auto;
+            }
+        }
+        .navigation {
             display: flex;
+            justify-content: space-between;
             align-items: center;
-            justify-content: center;
-            li {
-                margin: 30px;
-                list-style: none;
-                a {
-                    color: #1d1d1d;
-                    font-weight: 700;
-                    font-size: 15px;
-                    text-decoration: none;
+            width: 100%;
+            .nav-list {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                .nav-link {
+                    margin-left: 35px;
+                    list-style: none;
+                    position: relative;
+                    padding: 16px 15px;
+                    a {
+                        color: #1d1d1d;
+                        font-weight: 700;
+                        font-size: 15px;
+                        text-decoration: none;
+                    }
+                }
+                .nav-link-product-dropdown {
+                    position: relative;
+                    &::after {
+                        content: url(../img/arrow-down.svg);
+                        position: absolute;
+                        right: -8px;
+                        top: 15px;
+                        transition: transform 0.25s ease;
+                    }
+                    .nav-list-product {
+                        position: absolute;
+                        flex-direction: column;
+                        background: #fff;
+                        width: 220px;
+                        border-radius: 8px;
+                        top: 50px;
+                        padding: 8px 0;
+                        display: none;
+                        box-shadow: 0 0 2rem rgba(0, 0, 0, 0.1);
+                        .nav-divider {
+                            border-top: 1px solid #ebeaeb;
+                            user-select: none;
+                            &:hover {
+                                background: transparent !important;
+                            }
+                        }
+                        .nav-link-product {
+                            list-style: none;
+                            padding: 6px 16px;
+                            &:nth-child(8) {
+                                display: flex;
+                                margin-top: 6px;
+                                a {
+                                    .download-icon {
+                                        margin-left: 16px;
+                                        margin-right: 5px;
+                                    }
+                                }
+                            }
+                            a {
+                                font-weight: normal;
+                            }
+                            &:hover {
+                                background: #1264a3;
+                                a {
+                                    color: #fff;
+                                }
+                                .download-icon {
+                                    path {
+                                        fill: #fff;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    &:hover {
+                        .nav-list-product {
+                            display: flex;
+                        }
+                        &::after {
+                            transform: rotate(180deg);
+                        }
+                    }
                 }
             }
         }
@@ -46,6 +134,10 @@ header {
             margin-right: 20px;
         }
     }
+    &.scrolled {
+        background: #fff;
+        border-radius: 50px;
+    }
 }
 
 .btn {
@@ -57,17 +149,24 @@ header {
 }
 
 .btn-not-filled {
+    cursor: pointer;
     border: 1px solid rgb(97, 31, 105);
     background: transparent;
     color: rgb(97, 31, 105);
-    transition: 70ms border;
+    transition: box-shadow 0.25s ease-in-out;
     &:hover {
-        border: 2px solid rgb(97, 31, 105);
+        // border: 2px solid rgb(97, 31, 105);
+        box-shadow: inset 0 0 0 1px #611f69;
     }
 }
 
 .btn-filled {
+    cursor: pointer;
     border: transparent;
     background: rgb(97, 31, 105);
     color: #fff;
+    transition: background 0.25s ease-in-out;
+    &:hover {
+        background: #4a154b;
+    }
 }
