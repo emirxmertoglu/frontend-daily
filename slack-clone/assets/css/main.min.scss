@@ -282,3 +282,47 @@ body {
         }
     }
 }
+
+.billboard {
+    padding: 48px 275px 64px 336px;
+    background: #f6efe8;
+    &-container {
+        display: flex;
+        align-items: flex-start;
+        .billboard-header {
+            margin-right: 61px;
+            max-width: 555px;
+            &-headline {
+                color: #1d1d1d;
+                font-size: 50px;
+            }
+            &-copy {
+                padding: 0 121px 31px 0;
+                color: #1d1d1d;
+                font-size: 20px;
+                font-weight: 500;
+            }
+            &-btn {
+                padding: 19px 24px 20px;
+                border-radius: 4px;
+                font-size: 14px;
+                font-weight: 700;
+                text-transform: uppercase;
+            }
+            &-workspace {
+                margin-top: 16px;
+                font-size: 14px;
+                font-weight: 400px;
+                &-link {
+                    color: rgb(18, 100, 163);
+                    font-size: 15px;
+                    font-weight: 500px;
+                    text-decoration: none;
+                    display: inline-block;
+                    border-bottom: 1px solid rgb(18, 100, 163);
+                    padding-bottom: 1px;
+                }
+            }
+        }
+    }
+}
