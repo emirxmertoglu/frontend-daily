@@ -5,4 +5,9 @@ $(window).scroll(function nav_position() {
       : { 'position': 'relative', 'top': 'auto', 'background': 'transparent', 'border-radius': '50px' }
   );
   return nav_position;
-}());
+});
+
+$(".btn-click").on("click", function () {
+  $(".btn-click").toggleClass("btn-filled-dark")
+  $(".launch-drop-down").toggle();
+});
