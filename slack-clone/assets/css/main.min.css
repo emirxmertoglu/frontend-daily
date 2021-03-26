@@ -395,7 +395,7 @@ body {
 
 .billboard-container .billboard-header {
   margin-right: 61px;
-  max-width: 555px;
+  min-width: 555px;
 }
 
 .billboard-container .billboard-header-headline {
@@ -424,13 +424,96 @@ body {
   font-weight: 400px;
 }
 
-.billboard-container .billboard-header-workspace-link {
+.billboard-link {
   color: #1264a3;
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 500px;
   text-decoration: none;
   display: inline-block;
   border-bottom: 1px solid #1264a3;
   padding-bottom: 1px;
+}
+
+.billboard-link:hover {
+  border-bottom: 2px solid #1264a3;
+}
+
+.billboard2 {
+  background: #fff;
+  padding: 0 336px 16px;
+}
+
+.billboard2-container {
+  position: relative;
+}
+
+.billboard2-container .billboard2-video {
+  position: absolute;
+  top: -28px;
+  -webkit-box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+          box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.billboard2-container .billboard2-header {
+  position: absolute;
+  width: 455px;
+  left: 774px;
+  padding: 111px 0;
+}
+
+.billboard2-container .billboard2-header-headline {
+  color: #1d1d1d;
+  font-size: 45px;
+  letter-spacing: -0.8px;
+  line-height: 59px;
+}
+
+.billboard2-container .billboard2-header-copy {
+  margin-top: 16px;
+  color: #1d1d1d;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: -0.2px;
+  margin-bottom: 16px;
+}
+
+.billboard-header-link {
+  display: inline-block;
+  position: relative;
+  color: #1264a3;
+  text-decoration: none;
+  word-break: break-word;
+  font-size: 18px;
+  font-weight: 500;
+  -webkit-transition: border-bottom 0.32s ease 0s;
+  transition: border-bottom 0.32s ease 0s;
+}
+
+.billboard-header-link::after {
+  position: absolute;
+  content: url(../img/arrow-right.svg);
+  top: 6px;
+  margin-left: 10px;
+}
+
+.billboard-header-link::before {
+  position: absolute;
+  top: 25px;
+  content: "";
+  display: block;
+  width: 0px;
+  height: 2px;
+  background-color: #1264a3;
+  -webkit-transition: width 0.32s ease 0s;
+  transition: width 0.32s ease 0s;
+}
+
+.billboard-header-link:hover::before {
+  width: calc(100% + 26px);
+  -webkit-transition: width 0.3s ease 0s;
+  transition: width 0.3s ease 0s;
 }
 /*# sourceMappingURL=main.min.css.map */
