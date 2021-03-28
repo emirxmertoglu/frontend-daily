@@ -654,14 +654,6 @@ li {
   font-size: 14px;
 }
 
-.billboard-container .billboard-header-started-link a {
-  color: #1264a3;
-  cursor: pointer;
-  text-decoration: none;
-  border-bottom: 1px solid #1264a3;
-  word-break: break-word;
-}
-
 .billboard-container .billboard-illustration {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -702,6 +694,17 @@ li {
   width: 100%;
   min-width: 100%;
   cursor: pointer;
+}
+
+.hovered-link {
+  color: #1264a3;
+  cursor: pointer;
+  text-decoration: none;
+  border-bottom: 1px solid #1264a3;
+}
+
+.hovered-link:hover {
+  border-bottom: 2px solid #1264a3;
 }
 
 .feature-container {
@@ -840,7 +843,7 @@ li {
 .feature-container .feature-text-link::after {
   content: url("../img/chevron-right.svg");
   position: absolute;
-  right: -5px;
+  right: calc(-100%);
   top: 7px;
 }
 

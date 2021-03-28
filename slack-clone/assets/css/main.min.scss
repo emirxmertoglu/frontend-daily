@@ -482,13 +482,6 @@ li {
                 color: #1d1d1d;
                 font-weight: 500;
                 font-size: 14px;
-                a {
-                    color: #1264a3;
-                    cursor: pointer;
-                    text-decoration: none;
-                    border-bottom: 1px solid #1264a3;
-                    word-break: break-word;
-                }
             }
         }
         .billboard-illustration {
@@ -519,6 +512,16 @@ li {
                 cursor: pointer;
             }
         }
+    }
+}
+
+.hovered-link {
+    color: #1264a3;
+    cursor: pointer;
+    text-decoration: none;
+    border-bottom: 1px solid #1264a3;
+    &:hover {
+        border-bottom: 2px solid #1264a3;
     }
 }
 
@@ -611,7 +614,7 @@ li {
                 &::after {
                     content: url("../img/chevron-right.svg");
                     position: absolute;
-                    right: -5px;
+                    right: calc(-100%);
                     top: 7px;
                 }
             }
