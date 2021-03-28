@@ -51,15 +51,3 @@ footerNavList.click(function () {
   }
   return false;
 })
-
-
-// footerNavList.click(function(){
-// 	if(false == $(this).next().is(':visible')) {
-// 		$('.footer-nav-link').slideUp(300);
-//     footerNavList.addClass('rotate')
-// 	}  else {
-//     footerNavList.removeClass('rotate')
-//   }
-// 	$(this).next().slideToggle(300);
-// });
-// $('.footer-nav-list:eq(0)').show();
