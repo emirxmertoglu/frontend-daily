@@ -19,6 +19,7 @@ $(".nav-menu-btn").click(function () {
     opacity: 1,
     x: 0,
   })
+  $('body').css('overflow', 'hidden');
 });
 
 // Mobile Menu Close
@@ -27,6 +28,7 @@ $(".mobile-nav-close").click(function () {
     opacity: 0,
     x: 1000,
   })
+  $('body').css('overflow', 'unset');
 });
 
 // Mobile Product List Expanded
