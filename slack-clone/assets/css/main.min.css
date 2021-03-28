@@ -346,6 +346,26 @@ li {
   color: #1264a3;
 }
 
+.header .mobile-nav .mobile-nav-container .mobile-nav-button-container {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  padding: 16px;
+  background-color: #fff;
+  -webkit-box-shadow: 0 -10px 12px rgba(0, 0, 0, 0.04);
+          box-shadow: 0 -10px 12px rgba(0, 0, 0, 0.04);
+}
+
+.header .mobile-nav .mobile-nav-container .mobile-nav-button-container .mobile-nav-feature-grid {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 1rem 2.43902439%;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  padding-top: 24px;
+}
+
 .header-btn-group {
   display: -webkit-box;
   display: -ms-flexbox;

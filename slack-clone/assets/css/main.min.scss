@@ -257,6 +257,21 @@ li {
                     }
                 }
             }
+            .mobile-nav-button-container {
+                position: fixed;
+                width: 100%;
+                bottom: 0;
+                left: 0;
+                padding: 16px;
+                background-color: #fff;
+                box-shadow: 0 -10px 12px rgba(0, 0, 0, 0.04);
+                .mobile-nav-feature-grid {
+                    display: grid;
+                    grid-gap: 1rem 2.43902439%;
+                    grid-template-columns: 1fr;
+                    padding-top: 24px;
+                }
+            }
         }
     }
 }
@@ -288,9 +303,6 @@ li {
                 transform: rotate(0deg);
             }
         }
-        // &:hover {
-
-        // }
     }
 }
 .nav-menu-btn {
