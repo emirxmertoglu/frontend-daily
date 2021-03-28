@@ -589,36 +589,44 @@ li {
                     font-size: calc(1.125rem + (2 * (100vw - 400px) / 624));
                 }
             }
-            &-link {
-                font-size: 18px;
-                color: #1264a3;
-                transition: all 0.3s ease-in;
-                text-decoration: none;
-                position: relative;
-                &:hover {
-                    &::before {
-                        transform: scaleY(1);
-                        width: 110%;
-                    }
-                }
-                &::before {
-                    content: "";
-                    position: absolute;
-                    width: 0%;
-                    height: 2px;
-                    background: #1264a3;
-                    bottom: -5px;
-                    transform: scaleY(0);
-                    transition: all 0.25s ease-in-out;
-                }
-                &::after {
-                    content: url("../img/chevron-right.svg");
-                    position: absolute;
-                    right: calc(-100%);
-                    top: 7px;
-                }
-            }
         }
+    }
+}
+
+.feature-text-link {
+    font-size: 18px;
+    color: #1264a3;
+    transition: all 0.3s ease-in;
+    text-decoration: none;
+    position: relative;
+    &:hover {
+        &::before {
+            transform: scaleY(1);
+            width: 100%;
+        }
+    }
+    &::before {
+        content: "";
+        position: absolute;
+        width: 0%;
+        height: 2px;
+        background: #1264a3;
+        bottom: -5px;
+        transform: scaleY(0);
+        transition: all 0.25s ease-in-out;
+    }
+    // .chevron-right {
+    //     position: absolute;
+    //     top: 7px;
+    //     margin-left: 5px;
+    // }
+    &::after {
+        background-image: url(../img/chevron-right.svg);
+        content: "";
+        width: 19px;
+        height: 13px;
+        display: inline-block;
+        margin-left: 0.5em;
     }
 }
 
@@ -912,6 +920,8 @@ li {
                             span {
                                 &::after {
                                     transform: rotate(90deg);
+                                    top: 12px;
+                                    right: 4px;
                                 }
                             }
                         }
