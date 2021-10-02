@@ -1,644 +1,901 @@
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Where work happens | Slack</title>
-    <link rel="stylesheet" href="./assets/css/main.min.css">
-    <link rel="shortcut icon" href="./assets/img/favicon.png" type="image/png">
-</head>
+    <link rel="stylesheet" href="./assets/css/main.min.css" />
+    <link
+      rel="shortcut icon"
+      href="./assets/img/favicon.png"
+      type="image/png"
+    />
+  </head>
 
-<body>
-
+  <body>
     <header class="header">
-        <nav class="navigation">
-            <div class="nav-container">
-                <div class="logo">
-                    <a href="#"><img src="./assets/img/Slack-Logo.png" alt=""></a>
-                </div>
-                <ul class="nav-list">
-                    <li class="nav-link nav-link-product-dropdown">
-                        <a href="#">Product</a>
-                        <ul class="nav-list-product">
-                            <li class="nav-link-product"><a href="#">Features</a></li>
-                            <li class="nav-link-product"><a href="#">Channels</a></li>
-                            <li class="nav-link-product"><a href="#">Integration</a></li>
-                            <li class="nav-link-product"><a href="#">Security</a></li>
-                            <li class="nav-link-product"><a href="#">Slack Content</a></li>
-                            <li class="nav-link-product"><a href="#">Solutions</a></li>
-                            <li class="nav-link-product"><a href="#">Customers</a></li>
-                            <li class="nav-link-product nav-divider"></li>
-                            <li class="nav-link-product">
-                                <a href="#">
-                                    <svg class="download-icon" xmlns="http://www.w3.org/2000/svg" width="19" height="16"
-                                        viewBox="0 0 19 16" fill="#1d1d1d" class="nav-social__icon svg-replaced"
-                                        shape-rendering="geometricPrecision">
-                                        <path
-                                            d="M3.75938 15.7354C3.07813 15.7354 2.45 15.5572 1.875 15.2009C1.3 14.8445 0.84375 14.3641 0.50625 13.7597C0.16875 13.1552 0 12.4966 0 11.784C0 11.135 0.140625 10.5273 0.421875 9.96101C0.709375 9.39471 1.1 8.93021 1.59375 8.56753C1.4875 8.19212 1.43438 7.8167 1.43438 7.44129C1.43438 6.72864 1.60313 6.07008 1.94063 5.46561C2.27813 4.86113 2.73438 4.38391 3.30938 4.03395C3.88438 3.67763 4.50938 3.49947 5.18438 3.49947C5.28438 3.49947 5.43438 3.50583 5.63438 3.51855C6.19063 2.57684 6.93125 1.83238 7.85625 1.28517C8.7875 0.737961 9.7875 0.464355 10.8563 0.464355C11.9625 0.464355 12.9875 0.75705 13.9313 1.34244C14.875 1.92146 15.6219 2.70728 16.1719 3.6999C16.7281 4.69251 17.0063 5.77421 17.0063 6.94498C17.5563 7.40948 17.9844 7.97896 18.2906 8.65343C18.5969 9.3279 18.75 10.0437 18.75 10.8009C18.75 11.6917 18.5375 12.5157 18.1125 13.2729C17.6938 14.0301 17.125 14.6282 16.4063 15.0672C15.6938 15.5126 14.9125 15.7354 14.0625 15.7354H3.75938ZM14.0625 14.3037C14.6562 14.3037 15.2031 14.1478 15.7031 13.836C16.2094 13.5179 16.6094 13.0916 16.9031 12.5571C17.1969 12.0162 17.3438 11.4308 17.3438 10.8009C17.3438 10.1646 17.1969 9.57923 16.9031 9.04475C16.6094 8.5039 16.2156 8.07758 15.7219 7.7658C15.6656 7.73399 15.625 7.69899 15.6 7.66081C15.5813 7.62263 15.5719 7.57173 15.5719 7.5081C15.5719 7.45084 15.575 7.3713 15.5813 7.26949C15.5938 7.16769 15.6 7.06588 15.6 6.96407C15.6 6.04781 15.3875 5.20155 14.9625 4.42527C14.5375 3.64899 13.9594 3.03497 13.2281 2.58321C12.5031 2.12508 11.7125 1.89601 10.8563 1.89601C10.2063 1.89601 9.59063 2.02963 9.00938 2.29688C8.42813 2.55775 7.91875 2.9268 7.48125 3.40402C7.04375 3.88124 6.70625 4.42527 6.46875 5.03611C6.43125 5.13792 6.375 5.18882 6.3 5.18882C6.25625 5.18882 6.2125 5.17609 6.16875 5.15064C5.8625 5.0043 5.53438 4.93112 5.18438 4.93112C4.75938 4.93112 4.36562 5.04247 4.00313 5.26517C3.64687 5.48788 3.3625 5.7933 3.15 6.18143C2.94375 6.56321 2.84063 6.98316 2.84063 7.44129C2.84063 7.74671 2.8875 8.03941 2.98125 8.31937C3.08125 8.59298 3.21875 8.84113 3.39375 9.06383C3.4375 9.11474 3.45938 9.16246 3.45938 9.207C3.45938 9.26427 3.40625 9.30244 3.3 9.32153C2.94375 9.39152 2.62188 9.54423 2.33438 9.77966C2.04688 10.0151 1.81875 10.3078 1.65 10.6577C1.4875 11.0077 1.40625 11.3831 1.40625 11.784C1.40625 12.2421 1.50938 12.6652 1.71563 13.0534C1.92813 13.4352 2.21563 13.7406 2.57812 13.9696C2.94062 14.1923 3.33438 14.3037 3.75938 14.3037H14.0625ZM9.60938 12.3948C9.42188 12.3948 9.25625 12.3216 9.1125 12.1753L6.3 9.32153C6.1625 9.18155 6.09375 9.01611 6.09375 8.82523C6.09375 8.62798 6.1625 8.45936 6.3 8.31937C6.44375 8.17303 6.6125 8.09985 6.80625 8.09985C6.99375 8.09985 7.15625 8.16984 7.29375 8.30983L8.90625 9.94192V5.95237C8.90625 5.74876 8.97188 5.58014 9.10313 5.44652C9.24063 5.30653 9.40938 5.23654 9.60938 5.23654C9.79063 5.23654 9.95625 5.30653 10.1063 5.44652C10.2438 5.57378 10.3125 5.74239 10.3125 5.95237V9.94192L11.9344 8.30983C12.0719 8.16984 12.2344 8.09985 12.4219 8.09985C12.5969 8.09985 12.7688 8.17939 12.9375 8.33846C13.0625 8.45936 13.125 8.61843 13.125 8.81568C13.125 9.01929 13.0563 9.18791 12.9188 9.32153L10.1063 12.1753C9.95 12.3216 9.78438 12.3948 9.60938 12.3948Z"
-                                            fill="#1d1d1d"></path>
-                                    </svg>
-                                    <span>Download Slack</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="nav-link"><a href="#">Enterprise</a></li>
-                    <li class="nav-link"><a href="#">Resources</a></li>
-                    <li class="nav-link"><a href="#">Pricing</a></li>
-                </ul>
-
-                <div class="header-btn-group">
-                    <button class="btn btn-not-filled">talk to sales</button>
-                    <button class="btn btn-filled btn-click">launch slack</button>
-                    <div class="launch-drop-down">
-                        <div class="workspaces-container">
-                            <ul class="workspaces-list">
-                                <li class="workspaces-link">
-                                    <a href="#" class="single-workspace">
-                                        <span class="workspace-icon">NS</span>
-                                        <span class="workspace-name">nutima studio</span>
-                                        <svg class="dropdown-icon" width="17" height="13" viewBox="0 0 17 13"
-                                            fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M1 5.5C0.447715 5.5 0 5.94772 0 6.5C0 7.05228 0.447715 7.5 1 7.5V5.5ZM11.8969 0.338378C11.5315 -0.0757457 10.8996 -0.115241 10.4854 0.250162C10.0713 0.615566 10.0318 1.2475 10.3972 1.66162L11.8969 0.338378ZM16 6.5L16.7498 7.16162C17.0834 6.7836 17.0834 6.2164 16.7498 5.83838L16 6.5ZM10.3972 11.3384C10.0318 11.7525 10.0713 12.3844 10.4854 12.7498C10.8996 13.1152 11.5315 13.0757 11.8969 12.6616L10.3972 11.3384ZM1 7.5H15.5588V5.5H1V7.5ZM15.2502 5.83838L10.3972 11.3384L11.8969 12.6616L16.7498 7.16162L15.2502 5.83838ZM10.3972 1.66162L12.8237 4.41162L14.3234 3.08838L11.8969 0.338378L10.3972 1.66162ZM12.8237 4.41162L15.2502 7.16162L16.7498 5.83838L14.3234 3.08838L12.8237 4.41162Z"
-                                                fill="#1d1d1d" />
-                                        </svg>
-
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="workspace-container">
-                            <ul class="workspace-list">
-                                <li class="workspace-link"><a href="#" class="link">Create a new workspace</a></li>
-                                <li class="workspace-link"><a href="#" class="link">Sign in to another workspace</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="nav-menu-btn">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12" viewBox="0 0 18 12" fill="none"
-                        aria-label="" class="svg-replaced" shape-rendering="geometricPrecision">
-                        <path
-                            d="M1.52 2C1.22667 2 0.983333 1.90667 0.79 1.72C0.596667 1.52667 0.5 1.28667 0.5 1C0.5 0.713334 0.596667 0.476667 0.79 0.290001C0.983333 0.0966671 1.22667 0 1.52 0H16.48C16.7733 0 17.0167 0.0966671 17.21 0.290001C17.4033 0.476667 17.5 0.713334 17.5 1C17.5 1.28667 17.4033 1.52667 17.21 1.72C17.0167 1.90667 16.7733 2 16.48 2H1.52ZM1.52 7C1.22667 7 0.983333 6.90667 0.79 6.72C0.596667 6.52667 0.5 6.28667 0.5 6C0.5 5.71333 0.596667 5.47667 0.79 5.29C0.983333 5.09667 1.22667 5 1.52 5H16.48C16.7733 5 17.0167 5.09667 17.21 5.29C17.4033 5.47667 17.5 5.71333 17.5 6C17.5 6.28667 17.4033 6.52667 17.21 6.72C17.0167 6.90667 16.7733 7 16.48 7H1.52ZM1.52 12C1.22667 12 0.983333 11.9067 0.79 11.72C0.596667 11.5267 0.5 11.2867 0.5 11C0.5 10.7133 0.596667 10.4767 0.79 10.29C0.983333 10.0967 1.22667 10 1.52 10H16.48C16.7733 10 17.0167 10.0967 17.21 10.29C17.4033 10.4767 17.5 10.7133 17.5 11C17.5 11.2867 17.4033 11.5267 17.21 11.72C17.0167 11.9067 16.7733 12 16.48 12H1.52Z"
-                            fill="#1D1C1D"></path>
+      <nav class="navigation">
+        <div class="nav-container">
+          <div class="logo">
+            <a href="#"><img src="./assets/img/Slack-Logo.png" alt="" /></a>
+          </div>
+          <ul class="nav-list">
+            <li class="nav-link nav-link-product-dropdown">
+              <a href="#">Product</a>
+              <ul class="nav-list-product">
+                <li class="nav-link-product"><a href="#">Features</a></li>
+                <li class="nav-link-product"><a href="#">Channels</a></li>
+                <li class="nav-link-product"><a href="#">Integration</a></li>
+                <li class="nav-link-product"><a href="#">Security</a></li>
+                <li class="nav-link-product"><a href="#">Slack Content</a></li>
+                <li class="nav-link-product"><a href="#">Solutions</a></li>
+                <li class="nav-link-product"><a href="#">Customers</a></li>
+                <li class="nav-link-product nav-divider"></li>
+                <li class="nav-link-product">
+                  <a href="#">
+                    <svg
+                      class="download-icon"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="19"
+                      height="16"
+                      viewBox="0 0 19 16"
+                      fill="#1d1d1d"
+                      class="nav-social__icon svg-replaced"
+                      shape-rendering="geometricPrecision"
+                    >
+                      <path
+                        d="M3.75938 15.7354C3.07813 15.7354 2.45 15.5572 1.875 15.2009C1.3 14.8445 0.84375 14.3641 0.50625 13.7597C0.16875 13.1552 0 12.4966 0 11.784C0 11.135 0.140625 10.5273 0.421875 9.96101C0.709375 9.39471 1.1 8.93021 1.59375 8.56753C1.4875 8.19212 1.43438 7.8167 1.43438 7.44129C1.43438 6.72864 1.60313 6.07008 1.94063 5.46561C2.27813 4.86113 2.73438 4.38391 3.30938 4.03395C3.88438 3.67763 4.50938 3.49947 5.18438 3.49947C5.28438 3.49947 5.43438 3.50583 5.63438 3.51855C6.19063 2.57684 6.93125 1.83238 7.85625 1.28517C8.7875 0.737961 9.7875 0.464355 10.8563 0.464355C11.9625 0.464355 12.9875 0.75705 13.9313 1.34244C14.875 1.92146 15.6219 2.70728 16.1719 3.6999C16.7281 4.69251 17.0063 5.77421 17.0063 6.94498C17.5563 7.40948 17.9844 7.97896 18.2906 8.65343C18.5969 9.3279 18.75 10.0437 18.75 10.8009C18.75 11.6917 18.5375 12.5157 18.1125 13.2729C17.6938 14.0301 17.125 14.6282 16.4063 15.0672C15.6938 15.5126 14.9125 15.7354 14.0625 15.7354H3.75938ZM14.0625 14.3037C14.6562 14.3037 15.2031 14.1478 15.7031 13.836C16.2094 13.5179 16.6094 13.0916 16.9031 12.5571C17.1969 12.0162 17.3438 11.4308 17.3438 10.8009C17.3438 10.1646 17.1969 9.57923 16.9031 9.04475C16.6094 8.5039 16.2156 8.07758 15.7219 7.7658C15.6656 7.73399 15.625 7.69899 15.6 7.66081C15.5813 7.62263 15.5719 7.57173 15.5719 7.5081C15.5719 7.45084 15.575 7.3713 15.5813 7.26949C15.5938 7.16769 15.6 7.06588 15.6 6.96407C15.6 6.04781 15.3875 5.20155 14.9625 4.42527C14.5375 3.64899 13.9594 3.03497 13.2281 2.58321C12.5031 2.12508 11.7125 1.89601 10.8563 1.89601C10.2063 1.89601 9.59063 2.02963 9.00938 2.29688C8.42813 2.55775 7.91875 2.9268 7.48125 3.40402C7.04375 3.88124 6.70625 4.42527 6.46875 5.03611C6.43125 5.13792 6.375 5.18882 6.3 5.18882C6.25625 5.18882 6.2125 5.17609 6.16875 5.15064C5.8625 5.0043 5.53438 4.93112 5.18438 4.93112C4.75938 4.93112 4.36562 5.04247 4.00313 5.26517C3.64687 5.48788 3.3625 5.7933 3.15 6.18143C2.94375 6.56321 2.84063 6.98316 2.84063 7.44129C2.84063 7.74671 2.8875 8.03941 2.98125 8.31937C3.08125 8.59298 3.21875 8.84113 3.39375 9.06383C3.4375 9.11474 3.45938 9.16246 3.45938 9.207C3.45938 9.26427 3.40625 9.30244 3.3 9.32153C2.94375 9.39152 2.62188 9.54423 2.33438 9.77966C2.04688 10.0151 1.81875 10.3078 1.65 10.6577C1.4875 11.0077 1.40625 11.3831 1.40625 11.784C1.40625 12.2421 1.50938 12.6652 1.71563 13.0534C1.92813 13.4352 2.21563 13.7406 2.57812 13.9696C2.94062 14.1923 3.33438 14.3037 3.75938 14.3037H14.0625ZM9.60938 12.3948C9.42188 12.3948 9.25625 12.3216 9.1125 12.1753L6.3 9.32153C6.1625 9.18155 6.09375 9.01611 6.09375 8.82523C6.09375 8.62798 6.1625 8.45936 6.3 8.31937C6.44375 8.17303 6.6125 8.09985 6.80625 8.09985C6.99375 8.09985 7.15625 8.16984 7.29375 8.30983L8.90625 9.94192V5.95237C8.90625 5.74876 8.97188 5.58014 9.10313 5.44652C9.24063 5.30653 9.40938 5.23654 9.60938 5.23654C9.79063 5.23654 9.95625 5.30653 10.1063 5.44652C10.2438 5.57378 10.3125 5.74239 10.3125 5.95237V9.94192L11.9344 8.30983C12.0719 8.16984 12.2344 8.09985 12.4219 8.09985C12.5969 8.09985 12.7688 8.17939 12.9375 8.33846C13.0625 8.45936 13.125 8.61843 13.125 8.81568C13.125 9.01929 13.0563 9.18791 12.9188 9.32153L10.1063 12.1753C9.95 12.3216 9.78438 12.3948 9.60938 12.3948Z"
+                        fill="#1d1d1d"
+                      ></path>
                     </svg>
-                </div>
+                    <span>Download Slack</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-link"><a href="#">Enterprise</a></li>
+            <li class="nav-link"><a href="#">Resources</a></li>
+            <li class="nav-link"><a href="#">Pricing</a></li>
+          </ul>
+
+          <div class="header-btn-group">
+            <button class="btn btn-not-filled">talk to sales</button>
+            <button class="btn btn-filled btn-click">launch slack</button>
+            <div class="launch-drop-down">
+              <div class="workspaces-container">
+                <ul class="workspaces-list">
+                  <li class="workspaces-link">
+                    <a href="#" class="single-workspace">
+                      <span class="workspace-icon">NS</span>
+                      <span class="workspace-name">nutima studio</span>
+                      <svg
+                        class="dropdown-icon"
+                        width="17"
+                        height="13"
+                        viewBox="0 0 17 13"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M1 5.5C0.447715 5.5 0 5.94772 0 6.5C0 7.05228 0.447715 7.5 1 7.5V5.5ZM11.8969 0.338378C11.5315 -0.0757457 10.8996 -0.115241 10.4854 0.250162C10.0713 0.615566 10.0318 1.2475 10.3972 1.66162L11.8969 0.338378ZM16 6.5L16.7498 7.16162C17.0834 6.7836 17.0834 6.2164 16.7498 5.83838L16 6.5ZM10.3972 11.3384C10.0318 11.7525 10.0713 12.3844 10.4854 12.7498C10.8996 13.1152 11.5315 13.0757 11.8969 12.6616L10.3972 11.3384ZM1 7.5H15.5588V5.5H1V7.5ZM15.2502 5.83838L10.3972 11.3384L11.8969 12.6616L16.7498 7.16162L15.2502 5.83838ZM10.3972 1.66162L12.8237 4.41162L14.3234 3.08838L11.8969 0.338378L10.3972 1.66162ZM12.8237 4.41162L15.2502 7.16162L16.7498 5.83838L14.3234 3.08838L12.8237 4.41162Z"
+                          fill="#1d1d1d"
+                        />
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="workspace-container">
+                <ul class="workspace-list">
+                  <li class="workspace-link">
+                    <a href="#" class="link">Create a new workspace</a>
+                  </li>
+                  <li class="workspace-link">
+                    <a href="#" class="link">Sign in to another workspace</a>
+                  </li>
+                </ul>
+              </div>
             </div>
-        </nav>
+          </div>
 
-        <!-- *** Mobile Navigation *** -->
-
-        <nav class="mobile-nav">
-            <div class="mobile-nav-container">
-                <div class="mobile-nav-toolbar">
-                    <div class="logo">
-                        <a href="#"><img src="./assets/img/Slack-Logo.png" alt=""></a>
-                    </div>
-                    <div class="mobile-nav-close">
-                        <svg width="18" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg"
-                            aria-label="Close Navigation" class="svg-replaced" shape-rendering="geometricPrecision">
-                            <path
-                                d="M7.65636 6.5L12.26 11.1036C12.42 11.2636 12.5 11.4564 12.5 11.6818C12.5 11.9073 12.42 12.1 12.26 12.26C12.1 12.42 11.9073 12.5 11.6818 12.5C11.4564 12.5 11.2636 12.42 11.1036 12.26L6.5 7.65636L1.89636 12.26C1.73636 12.42 1.54364 12.5 1.31818 12.5C1.09273 12.5 0.9 12.42 0.74 12.26C0.58 12.1 0.5 11.9073 0.5 11.6818C0.5 11.4564 0.58 11.2636 0.74 11.1036L5.34364 6.5L0.74 1.89636C0.58 1.73636 0.5 1.54364 0.5 1.31818C0.5 1.09273 0.58 0.899999 0.74 0.739999C0.9 0.58 1.09273 0.5 1.31818 0.5C1.54364 0.5 1.73636 0.58 1.89636 0.739999L6.5 5.34364L11.1036 0.739999C11.2636 0.58 11.4564 0.5 11.6818 0.5C11.9073 0.5 12.1 0.58 12.26 0.739999C12.42 0.899999 12.5 1.09273 12.5 1.31818C12.5 1.54364 12.42 1.73636 12.26 1.89636L7.65636 6.5Z"
-                                fill="#1D1C1D" stroke="black" stroke-width="0.5"></path>
-                        </svg>
-                    </div>
-                </div>
-                <div class="mobile-nav-scroller">
-                    <ul class="mobile-nav-list">
-                        <li class="mobile-nav-link list-expanded">
-                            <span href="#">Product</span>
-                            <ul class="mobile-nav-product-list">
-                                <li class="mobile-nav-product-link"><a href="#">Features</a></li>
-                                <li class="mobile-nav-product-link"><a href="#">Channels</a></li>
-                                <li class="mobile-nav-product-link"><a href="#">Integration</a></li>
-                                <li class="mobile-nav-product-link"><a href="#">Security</a></li>
-                                <li class="mobile-nav-product-link"><a href="#">Slack Content</a></li>
-                                <li class="mobile-nav-product-link"><a href="#">Solutions</a></li>
-                                <li class="mobile-nav-product-link"><a href="#">Customers</a></li>
-                            </ul>
-                        </li>
-                        <li class="mobile-nav-link">
-                            <a href="#">Enterprise</a>
-                        </li>
-                        <li class="mobile-nav-link">
-                            <a href="#">Resources</a>
-                        </li>
-                        <li class="mobile-nav-link">
-                            <a href="#">Pricing</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="mobile-nav-button-container">
-                    <div class="mobile-nav-feature-grid">
-                        <button class="btn btn-not-filled">talk to sales</button>
-                        <button class="btn btn-filled">download slack</button>
-                    </div>
-                </div>
-            </div>
-        </nav>
-
+          <div class="nav-menu-btn">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="18"
+              height="12"
+              viewBox="0 0 18 12"
+              fill="none"
+              aria-label=""
+              class="svg-replaced"
+              shape-rendering="geometricPrecision"
+            >
+              <path
+                d="M1.52 2C1.22667 2 0.983333 1.90667 0.79 1.72C0.596667 1.52667 0.5 1.28667 0.5 1C0.5 0.713334 0.596667 0.476667 0.79 0.290001C0.983333 0.0966671 1.22667 0 1.52 0H16.48C16.7733 0 17.0167 0.0966671 17.21 0.290001C17.4033 0.476667 17.5 0.713334 17.5 1C17.5 1.28667 17.4033 1.52667 17.21 1.72C17.0167 1.90667 16.7733 2 16.48 2H1.52ZM1.52 7C1.22667 7 0.983333 6.90667 0.79 6.72C0.596667 6.52667 0.5 6.28667 0.5 6C0.5 5.71333 0.596667 5.47667 0.79 5.29C0.983333 5.09667 1.22667 5 1.52 5H16.48C16.7733 5 17.0167 5.09667 17.21 5.29C17.4033 5.47667 17.5 5.71333 17.5 6C17.5 6.28667 17.4033 6.52667 17.21 6.72C17.0167 6.90667 16.7733 7 16.48 7H1.52ZM1.52 12C1.22667 12 0.983333 11.9067 0.79 11.72C0.596667 11.5267 0.5 11.2867 0.5 11C0.5 10.7133 0.596667 10.4767 0.79 10.29C0.983333 10.0967 1.22667 10 1.52 10H16.48C16.7733 10 17.0167 10.0967 17.21 10.29C17.4033 10.4767 17.5 10.7133 17.5 11C17.5 11.2867 17.4033 11.5267 17.21 11.72C17.0167 11.9067 16.7733 12 16.48 12H1.52Z"
+                fill="#1D1C1D"
+              ></path>
+            </svg>
+          </div>
         </div>
+      </nav>
+
+      <!-- *** Mobile Navigation *** -->
+
+      <nav class="mobile-nav">
+        <div class="mobile-nav-container">
+          <div class="mobile-nav-toolbar">
+            <div class="logo">
+              <a href="#"><img src="./assets/img/Slack-Logo.png" alt="" /></a>
+            </div>
+            <div class="mobile-nav-close">
+              <svg
+                width="18"
+                height="13"
+                viewBox="0 0 13 13"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-label="Close Navigation"
+                class="svg-replaced"
+                shape-rendering="geometricPrecision"
+              >
+                <path
+                  d="M7.65636 6.5L12.26 11.1036C12.42 11.2636 12.5 11.4564 12.5 11.6818C12.5 11.9073 12.42 12.1 12.26 12.26C12.1 12.42 11.9073 12.5 11.6818 12.5C11.4564 12.5 11.2636 12.42 11.1036 12.26L6.5 7.65636L1.89636 12.26C1.73636 12.42 1.54364 12.5 1.31818 12.5C1.09273 12.5 0.9 12.42 0.74 12.26C0.58 12.1 0.5 11.9073 0.5 11.6818C0.5 11.4564 0.58 11.2636 0.74 11.1036L5.34364 6.5L0.74 1.89636C0.58 1.73636 0.5 1.54364 0.5 1.31818C0.5 1.09273 0.58 0.899999 0.74 0.739999C0.9 0.58 1.09273 0.5 1.31818 0.5C1.54364 0.5 1.73636 0.58 1.89636 0.739999L6.5 5.34364L11.1036 0.739999C11.2636 0.58 11.4564 0.5 11.6818 0.5C11.9073 0.5 12.1 0.58 12.26 0.739999C12.42 0.899999 12.5 1.09273 12.5 1.31818C12.5 1.54364 12.42 1.73636 12.26 1.89636L7.65636 6.5Z"
+                  fill="#1D1C1D"
+                  stroke="black"
+                  stroke-width="0.5"
+                ></path>
+              </svg>
+            </div>
+          </div>
+          <div class="mobile-nav-scroller">
+            <ul class="mobile-nav-list">
+              <li class="mobile-nav-link list-expanded">
+                <span href="#">Product</span>
+                <ul class="mobile-nav-product-list">
+                  <li class="mobile-nav-product-link">
+                    <a href="#">Features</a>
+                  </li>
+                  <li class="mobile-nav-product-link">
+                    <a href="#">Channels</a>
+                  </li>
+                  <li class="mobile-nav-product-link">
+                    <a href="#">Integration</a>
+                  </li>
+                  <li class="mobile-nav-product-link">
+                    <a href="#">Security</a>
+                  </li>
+                  <li class="mobile-nav-product-link">
+                    <a href="#">Slack Content</a>
+                  </li>
+                  <li class="mobile-nav-product-link">
+                    <a href="#">Solutions</a>
+                  </li>
+                  <li class="mobile-nav-product-link">
+                    <a href="#">Customers</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="mobile-nav-link">
+                <a href="#">Enterprise</a>
+              </li>
+              <li class="mobile-nav-link">
+                <a href="#">Resources</a>
+              </li>
+              <li class="mobile-nav-link">
+                <a href="#">Pricing</a>
+              </li>
+            </ul>
+          </div>
+          <div class="mobile-nav-button-container">
+            <div class="mobile-nav-feature-grid">
+              <button class="btn btn-not-filled">talk to sales</button>
+              <button class="btn btn-filled">download slack</button>
+            </div>
+          </div>
+        </div>
+      </nav>
     </header>
 
-    <main class="home" style="overflow-x: hidden;">
+    <main class="home" style="overflow-x: hidden">
+      <!-- *** Billboard Section *** -->
 
-        <!-- *** Billboard Section *** -->
-
-        <section class="billboard">
-            <div class="billboard-container">
-                <header class="billboard-header">
-                    <h1 class="billboard-header-heading">This is your moment. Let’s reinvent work.</h1>
-                    <p class="billboard-header-description">The past year proved we can redefine the way we work. Let’s
-                        build a more connected, inclusive and flexible future together.</p>
-                    <button class="btn btn-filled billboard-header-button">LEARN HOW</button>
-                    <p class="billboard-header-started-link">Need to create a workspace? <a href="#"
-                            class="hovered-link">Get started</a></p>
-                </header>
-                <div class="billboard-illustration">
-                    <div class="play-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" height="60" width="84" aria-label="" aria-hidden=""
-                            class="c-youtube-video--showcase__icon svg-replaced" shape-rendering="geometricPrecision">
-                            <g fill="none" transform="translate(0 .564)">
-                                <rect height="59" rx="4" width="84"></rect>
-                                <path d="M49 29.95L35 36.9V23L49 29.95Z" fill="#fff"></path>
-                            </g>
-                        </svg>
-                    </div>
-
-                    <img src="./assets/img/img-video-thumb.jpg" alt="Video about our opportunity to reinvent work">
-                </div>
+      <section class="billboard">
+        <div class="billboard-container">
+          <header class="billboard-header">
+            <h1 class="billboard-header-heading">
+              This is your moment. Let’s reinvent work.
+            </h1>
+            <p class="billboard-header-description">
+              The past year proved we can redefine the way we work. Let’s build
+              a more connected, inclusive and flexible future together.
+            </p>
+            <button class="btn btn-filled billboard-header-button">
+              LEARN HOW
+            </button>
+            <p class="billboard-header-started-link">
+              Need to create a workspace?
+              <a href="#" class="hovered-link">Get started</a>
+            </p>
+          </header>
+          <div class="billboard-illustration">
+            <div class="play-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="60"
+                width="84"
+                aria-label=""
+                aria-hidden=""
+                class="c-youtube-video--showcase__icon svg-replaced"
+                shape-rendering="geometricPrecision"
+              >
+                <g fill="none" transform="translate(0 .564)">
+                  <rect height="59" rx="4" width="84"></rect>
+                  <path d="M49 29.95L35 36.9V23L49 29.95Z" fill="#fff"></path>
+                </g>
+              </svg>
             </div>
-        </section>
 
-        <!-- *** Feature Section *** -->
+            <img
+              src="./assets/img/img-video-thumb.jpg"
+              alt="Video about our opportunity to reinvent work"
+            />
+          </div>
+        </div>
+      </section>
 
-        <section class="feature">
-            <div class="feature-container">
-                <div class="features-video">
-                    <video autoplay loop muted
-                        poster="https://a.slack-edge.com/9b527/marketing/img/homepage/hp-prospect/channels/image/bring-your-team-together-in-channels.jpg">
-                        <source
-                            src="https://a.slack-edge.com/5f6f2/marketing/img/homepage/hp-prospect/channels/bring-your-team-together-in-channels.mp4"
-                            type="video/mp4">
-                    </video>
-                </div>
-                <div class="feature-text">
-                    <h1 class="feature-text-heading">Bring your team together in channels</h1>
-                    <p class="feature-text-description">A channel is the place for everything related to a project,
-                        topic or team. Everyone in a channel sees the same messages and stays on the same page.</p>
-                    <a href="#" class="feature-text-link">
-                        Learn more about channels
-                    </a>
-                </div>
+      <!-- *** Feature Section *** -->
+
+      <section class="feature">
+        <div class="feature-container">
+          <div class="features-video">
+            <video
+              autoplay
+              loop
+              muted
+              poster="https://a.slack-edge.com/9b527/marketing/img/homepage/hp-prospect/channels/image/bring-your-team-together-in-channels.jpg"
+            >
+              <source
+                src="https://a.slack-edge.com/5f6f2/marketing/img/homepage/hp-prospect/channels/bring-your-team-together-in-channels.mp4"
+                type="video/mp4"
+              />
+            </video>
+          </div>
+          <div class="feature-text">
+            <h1 class="feature-text-heading">
+              Bring your team together in channels
+            </h1>
+            <p class="feature-text-description">
+              A channel is the place for everything related to a project, topic
+              or team. Everyone in a channel sees the same messages and stays on
+              the same page.
+            </p>
+            <a href="#" class="feature-text-link">
+              Learn more about channels
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- *** Feature Grid Section *** -->
+
+      <section class="feature-grid">
+        <div class="feature-grid-container">
+          <div class="feature-grid-item">
+            <img
+              src="./assets/img/feature-1.svg"
+              alt="feature grid item icon"
+            />
+            <h3 class="feature-grid-item-heading">
+              <strong>
+                <a href="" class="hovered-link">Share files</a>
+              </strong>
+            </h3>
+            <p class="feature-grid-item-description">
+              Keep files and the messages about them together in channels.
+            </p>
+          </div>
+          <div class="feature-grid-item">
+            <img
+              src="./assets/img/feature-2.svg"
+              alt="feature grid item icon"
+            />
+            <h3 class="feature-grid-item-heading">
+              <strong>
+                <a href="" class="hovered-link">Connect on a call</a>
+              </strong>
+            </h3>
+            <p class="feature-grid-item-description">
+              If working face to face is easier, go from channel to voice or
+              video call in a click.
+            </p>
+          </div>
+          <div class="feature-grid-item">
+            <img
+              src="./assets/img/feature-3.svg"
+              alt="feature grid item icon"
+            />
+            <h3 class="feature-grid-item-heading">
+              <strong>
+                <a href="" class="hovered-link">Collaborate with partners</a>
+              </strong>
+            </h3>
+            <p class="feature-grid-item-description">
+              Work faster with external clients, vendors and more by working in
+              a channel.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- *** Showcase Section *** -->
+
+      <section class="showcase">
+        <div class="showcase-container">
+          <div class="showcase-header">
+            <h2 class="showcase-header-heading">
+              Over 750,000 companies use Slack to get work done
+            </h2>
+            <p class="showcase-header-link">
+              <a href="#" class="feature-text-link">See all customer stories</a>
+            </p>
+          </div>
+        </div>
+        <div class="showcase-card">
+          <div class="showcase-card-container">
+            <img
+              src="./assets/img/showcase-card-desktop.png"
+              alt="Soccer player kicking a ball"
+              class="showcase-card-img"
+            />
+            <div class="show-case-card-testimonial">
+              <span
+                >“Sporting event highlights that used to take hours from
+                creation to approval and distribution are now able to be shared
+                in near-real time through our social channels, thanks to
+                Slack.”</span
+              >
+              <figure>
+                <img src="./assets/img/fox-logo.png" alt="Fox" />
+              </figure>
+              <span>
+                <strong>Paul Cheesbrough,</strong>
+                CTO
+              </span>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
 
-        <!-- *** Feature Grid Section *** -->
+      <!-- *** Showcase Companies Section *** -->
 
-        <section class="feature-grid">
-            <div class="feature-grid-container">
-                <div class="feature-grid-item">
-                    <img src="./assets/img/feature-1.svg" alt="feature grid item icon">
-                    <h3 class="feature-grid-item-heading">
-                        <strong>
-                            <a href="" class="hovered-link">Share files</a>
-                        </strong>
-                    </h3>
-                    <p class="feature-grid-item-description">Keep files and the messages about them together in
-                        channels.</p>
-                </div>
-                <div class="feature-grid-item">
-                    <img src="./assets/img/feature-2.svg" alt="feature grid item icon">
-                    <h3 class="feature-grid-item-heading">
-                        <strong>
-                            <a href="" class="hovered-link">Connect on a call</a>
-                        </strong>
-                    </h3>
-                    <p class="feature-grid-item-description">If working face to face is easier, go from channel to voice
-                        or video call in a click.</p>
-                </div>
-                <div class="feature-grid-item">
-                    <img src="./assets/img/feature-3.svg" alt="feature grid item icon">
-                    <h3 class="feature-grid-item-heading">
-                        <strong>
-                            <a href="" class="hovered-link">Collaborate with partners</a>
-                        </strong>
-                    </h3>
-                    <p class="feature-grid-item-description"> Work faster with external clients, vendors and more by
-                        working in a channel. </p>
-                </div>
+      <section class="showcase-companies">
+        <div class="showcase-companies-container">
+          <div class="showcase-companies-logos">
+            <div class="c-logo-bar__item">
+              <img
+                src="https://a.slack-edge.com/e2fa17/marketing/img/logos/company/_color/ameritrade-logo.png"
+                srcset="
+                  https://a.slack-edge.com/e2fa17/marketing/img/logos/company/_color/ameritrade-logo.png   1x,
+                  https://a.slack-edge.com/80588/marketing/img/logos/company/_color/ameritrade-logo@2x.png 2x
+                "
+                alt="Ameritrade"
+                height="35"
+              />
             </div>
-        </section>
-
-        <!-- *** Showcase Section *** -->
-
-        <section class="showcase">
-            <div class="showcase-container">
-                <div class="showcase-header">
-                    <h2 class="showcase-header-heading">
-                        Over 750,000 companies use Slack to get work done
-                    </h2>
-                    <p class="showcase-header-link">
-                        <a href="#" class="feature-text-link">See all customer stories</a>
-                    </p>
-                </div>
+            <div class="c-logo-bar__item">
+              <img
+                style="max-width: 50px"
+                src="https://a.slack-edge.com/80588/marketing/img/logos/company/_color/target-logo.png"
+                srcset="
+                  https://a.slack-edge.com/80588/marketing/img/logos/company/_color/target-logo.png    1x,
+                  https://a.slack-edge.com/80588/marketing/img/logos/company/_color/target-logo@2x.png 2x
+                "
+                alt="Target"
+                height="35"
+              />
             </div>
-            <div class="showcase-card">
-                <div class="showcase-card-container">
-                    <img src="./assets/img/showcase-card-desktop.png" alt="Soccer player kicking a ball"
-                        class="showcase-card-img">
-                    <div class="show-case-card-testimonial">
-                        <span>“Sporting event highlights that used to take hours from creation to approval and
-                            distribution are now able to be shared in near-real time through our social channels, thanks
-                            to Slack.”</span>
-                        <figure>
-                            <img src="./assets/img/fox-logo.png" alt="Fox">
-                        </figure>
-                        <span>
-                            <strong>Paul Cheesbrough,</strong>
-                            CTO
-                        </span>
-                    </div>
-                </div>
+            <div class="c-logo-bar__item">
+              <img
+                src="https://a.slack-edge.com/ce67d/marketing/img/logos/company/_color/uber.png"
+                srcset="
+                  https://a.slack-edge.com/ce67d/marketing/img/logos/company/_color/uber.png     1x,
+                  https://a.slack-edge.com/e2fa17/marketing/img/logos/company/_color/uber@2x.png 2x
+                "
+                alt="Uber"
+                height="35"
+              />
             </div>
-        </section>
-
-        <!-- *** Showcase Companies Section *** -->
-
-
-        <section class="showcase-companies">
-            <div class="showcase-companies-container">
-                <div class="showcase-companies-logos">
-                    <div class="c-logo-bar__item">
-                        <img src="https://a.slack-edge.com/e2fa17/marketing/img/logos/company/_color/ameritrade-logo.png"
-                            srcset="https://a.slack-edge.com/e2fa17/marketing/img/logos/company/_color/ameritrade-logo.png 1x, https://a.slack-edge.com/80588/marketing/img/logos/company/_color/ameritrade-logo@2x.png 2x"
-                            alt="Ameritrade" height="35">
-                    </div>
-                    <div class="c-logo-bar__item"><img style="max-width:50px"
-                            src="https://a.slack-edge.com/80588/marketing/img/logos/company/_color/target-logo.png"
-                            srcset="https://a.slack-edge.com/80588/marketing/img/logos/company/_color/target-logo.png 1x, https://a.slack-edge.com/80588/marketing/img/logos/company/_color/target-logo@2x.png 2x"
-                            alt="Target" height="35"></div>
-                    <div class="c-logo-bar__item"><img
-                            src="https://a.slack-edge.com/ce67d/marketing/img/logos/company/_color/uber.png"
-                            srcset="https://a.slack-edge.com/ce67d/marketing/img/logos/company/_color/uber.png 1x, https://a.slack-edge.com/e2fa17/marketing/img/logos/company/_color/uber@2x.png 2x"
-                            alt="Uber" height="35"></div>
-                    <div class="c-logo-bar__item"><img
-                            src="https://a.slack-edge.com/65573/marketing/img/logos/company/_color/logo-onemedical.png"
-                            srcset="https://a.slack-edge.com/65573/marketing/img/logos/company/_color/logo-onemedical.png 1x, https://a.slack-edge.com/65573/marketing/img/logos/company/_color/logo-onemedical@2x.png 2x"
-                            alt="One Medical" height="35"></div>
-                    <div class="c-logo-bar__item"><img
-                            src="https://a.slack-edge.com/80588/marketing/img/logos/company/_color/time-logo.png"
-                            srcset="https://a.slack-edge.com/80588/marketing/img/logos/company/_color/time-logo.png 1x, https://a.slack-edge.com/80588/marketing/img/logos/company/_color/time-logo@2x.png 2x"
-                            alt="Time" height="35"></div>
-                    <div class="c-logo-bar__item"><img
-                            src="https://a.slack-edge.com/a92aa/marketing/img/logos/company/_color/us-department-of-veteran-affairs.png"
-                            srcset="https://a.slack-edge.com/a92aa/marketing/img/logos/company/_color/us-department-of-veteran-affairs.png 1x, https://a.slack-edge.com/e2fa17/marketing/img/logos/company/_color/us-department-of-veteran-affairs@2x.png 2x"
-                            alt="US Department of Veteran Affair" height="35"></div>
-                    <div class="c-logo-bar__item"><img
-                            src="https://a.slack-edge.com/e2fa17/marketing/img/logos/company/_color/intuit.png"
-                            srcset="https://a.slack-edge.com/e2fa17/marketing/img/logos/company/_color/intuit.png 1x, https://a.slack-edge.com/e2fa17/marketing/img/logos/company/_color/intuit@2x.png 2x"
-                            alt="Intuit" height="35"></div>
-                    <div class="c-logo-bar__item"><img
-                            src="https://a.slack-edge.com/80588/marketing/img/logos/company/_color/oracle-logo.png"
-                            srcset="https://a.slack-edge.com/80588/marketing/img/logos/company/_color/oracle-logo.png 1x, https://a.slack-edge.com/80588/marketing/img/logos/company/_color/oracle-logo@2x.png 2x"
-                            alt="Oracle" height="35"></div>
-                </div>
+            <div class="c-logo-bar__item">
+              <img
+                src="https://a.slack-edge.com/65573/marketing/img/logos/company/_color/logo-onemedical.png"
+                srcset="
+                  https://a.slack-edge.com/65573/marketing/img/logos/company/_color/logo-onemedical.png    1x,
+                  https://a.slack-edge.com/65573/marketing/img/logos/company/_color/logo-onemedical@2x.png 2x
+                "
+                alt="One Medical"
+                height="35"
+              />
             </div>
-        </section>
-
-        <!-- Integrations Section -->
-
-        <section class="integrations">
-            <div class="integrations-container">
-                <div class="integrations-container-image integration-img-1">
-                    <img src="https://a.slack-edge.com/5f6f2/marketing/img/homepage/hp-prospect/slack-integrations.png"
-                        srcset="https://a.slack-edge.com/5f6f2/marketing/img/homepage/hp-prospect/slack-integrations.png 1x, https://a.slack-edge.com/5f6f2/marketing/img/homepage/hp-prospect/slack-integrations@2x.png 2x"
-                        alt="Icons for apps like Salesforce and Google Drive connecting to Slack">
-                </div>
-                <div class="integrations-container-header integration-h-1">
-                    <h2 class="integrations-container-header-headline">Slack makes other software better</h2>
-                    <p class="integrations-container-header-feature">Make your tools more accessible and useful by
-                        connecting them all in one place.</p>
-                    <ul class="integrations-container-header-homepage-list">
-                        <li class="integrations-container-header-homepage-list-item"><span class="item-span">Connect
-                                over 2,200
-                                ready-to-use Slack apps</span></li>
-                        <li class="integrations-container-header-homepage-list-item"><span class="item-span">Build your
-                                own time-saving
-                                workflows</span></li>
-                        <li class="integrations-container-header-homepage-list-item"><span class="item-span">Integrate
-                                your internal tools
-                                with the Slack
-                                APIs</span></li>
-                    </ul>
-                    <a href="#" class="feature-text-link">Learn more about integrations</a>
-                </div>
+            <div class="c-logo-bar__item">
+              <img
+                src="https://a.slack-edge.com/80588/marketing/img/logos/company/_color/time-logo.png"
+                srcset="
+                  https://a.slack-edge.com/80588/marketing/img/logos/company/_color/time-logo.png    1x,
+                  https://a.slack-edge.com/80588/marketing/img/logos/company/_color/time-logo@2x.png 2x
+                "
+                alt="Time"
+                height="35"
+              />
             </div>
-        </section>
-
-        <section class="integrations">
-            <div class="integrations-container container-2">
-                <div class="integrations-container-image integration-img-2">
-                    <img src="https://a.slack-edge.com/a63d2/marketing/img/homepage/hp-prospect/enterprise/enterprise-grade-for-everyone.png"
-                        srcset="https://a.slack-edge.com/a63d2/marketing/img/homepage/hp-prospect/enterprise/enterprise-grade-for-everyone.png 1x, https://a.slack-edge.com/d5fd3/marketing/img/homepage/hp-prospect/enterprise/enterprise-grade-for-everyone@2x.png 2x"
-                        alt="Illustration of the different components of Slack for enterprise, like security and scale">
-                </div>
-                <div class="integrations-container-header integration-h-2">
-                    <h2 class="integrations-container-header-headline">Slack makes other software better</h2>
-                    <p class="integrations-container-header-feature">Make your tools more accessible and useful by
-                        connecting them all in one place.</p>
-                    <ul class="integrations-container-header-homepage-list">
-                        <li class="integrations-container-header-homepage-list-item"><span class="item-span">Connect
-                                over 2,200
-                                ready-to-use Slack apps</span></li>
-                        <li class="integrations-container-header-homepage-list-item"><span class="item-span">Build your
-                                own time-saving
-                                workflows</span></li>
-                        <li class="integrations-container-header-homepage-list-item"><span class="item-span">Integrate
-                                your internal tools
-                                with the Slack
-                                APIs</span></li>
-                    </ul>
-                    <a href="#" class="feature-text-link">Learn more about integrations</a>
-                </div>
+            <div class="c-logo-bar__item">
+              <img
+                src="https://a.slack-edge.com/a92aa/marketing/img/logos/company/_color/us-department-of-veteran-affairs.png"
+                srcset="
+                  https://a.slack-edge.com/a92aa/marketing/img/logos/company/_color/us-department-of-veteran-affairs.png     1x,
+                  https://a.slack-edge.com/e2fa17/marketing/img/logos/company/_color/us-department-of-veteran-affairs@2x.png 2x
+                "
+                alt="US Department of Veteran Affair"
+                height="35"
+              />
             </div>
-        </section>
-
-        <!-- Get More Section -->
-
-        <section class="get-more">
-            <div class="get-more-container">
-                <h2>Get more out of Slack</h2>
-                <div class="get-more-container-grid">
-                    <a href="" class="get-more-card">
-                        <figure><img
-                                src="https://a.slack-edge.com/236db6/marketing/img/promos/slack-101-learning-slack-made-simple.jpg"
-                                srcset="https://a.slack-edge.com/236db6/marketing/img/promos/slack-101-learning-slack-made-simple.jpg 1x, https://a.slack-edge.com/236db6/marketing/img/promos/slack-101-learning-slack-made-simple@2x.jpg 2x"
-                                alt=""></figure>
-                        <header class="get-more-card-header">
-                            <span class="get-more-card-header-span">How-to</span>
-                            <h3 class="get-more-card-header-h3">Slack 101: Learning Slack made simple</h3>
-                        </header>
-                        <div class="get-more-card-div">Learn more</div>
-                    </a>
-                    <a href="" class="get-more-card">
-                        <figure><img src="https://a.slack-edge.com/64d6c/marketing/img/promos/promo-rimeto.jpg"
-                                srcset="https://a.slack-edge.com/64d6c/marketing/img/promos/promo-rimeto.jpg 1x, https://a.slack-edge.com/64d6c/marketing/img/promos/promo-rimeto@2x.jpg 2x"
-                                alt=""></figure>
-                        <header class="get-more-card-header">
-                            <span class="get-more-card-header-span">Blog</span>
-                            <h3 class="get-more-card-header-h3">Reimagining the Company Directory</h3>
-                        </header>
-                        <div class="get-more-card-div">Learn more</div>
-                    </a>
-                    <a href="" class="get-more-card">
-                        <figure><img src="https://a.slack-edge.com/1a292/marketing/img/promos/slack-connect-promo.jpg"
-                                srcset="https://a.slack-edge.com/1a292/marketing/img/promos/slack-connect-promo.jpg 1x, https://a.slack-edge.com/1a292/marketing/img/promos/slack-connect-promo@2x.jpg 2x"
-                                alt=""></figure>
-                        <header class="get-more-card-header">
-                            <span class="get-more-card-header-span">Blog</span>
-                            <h3 class="get-more-card-header-h3">Introducing Slack Connect: the future of business
-                                communication
-                            </h3>
-                        </header>
-                        <div class="get-more-card-div">Learn more</div>
-                    </a>
-                </div>
-                <div class="get-more-button">
-                    <button class="btn btn-not-filled">see all resources</button>
-                </div>
+            <div class="c-logo-bar__item">
+              <img
+                src="https://a.slack-edge.com/e2fa17/marketing/img/logos/company/_color/intuit.png"
+                srcset="
+                  https://a.slack-edge.com/e2fa17/marketing/img/logos/company/_color/intuit.png    1x,
+                  https://a.slack-edge.com/e2fa17/marketing/img/logos/company/_color/intuit@2x.png 2x
+                "
+                alt="Intuit"
+                height="35"
+              />
             </div>
-        </section>
+            <div class="c-logo-bar__item">
+              <img
+                src="https://a.slack-edge.com/80588/marketing/img/logos/company/_color/oracle-logo.png"
+                srcset="
+                  https://a.slack-edge.com/80588/marketing/img/logos/company/_color/oracle-logo.png    1x,
+                  https://a.slack-edge.com/80588/marketing/img/logos/company/_color/oracle-logo@2x.png 2x
+                "
+                alt="Oracle"
+                height="35"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
 
-        <!-- *** Footer Top Section *** -->
+      <!-- Integrations Section -->
 
-        <section class="footer-top">
-            <div class="footer-top-container">
-                <h3 class="footer-top-heading">
-                    Choose a better way to work
+      <section class="integrations">
+        <div class="integrations-container">
+          <div class="integrations-container-image integration-img-1">
+            <img
+              src="https://a.slack-edge.com/5f6f2/marketing/img/homepage/hp-prospect/slack-integrations.png"
+              srcset="
+                https://a.slack-edge.com/5f6f2/marketing/img/homepage/hp-prospect/slack-integrations.png    1x,
+                https://a.slack-edge.com/5f6f2/marketing/img/homepage/hp-prospect/slack-integrations@2x.png 2x
+              "
+              alt="Icons for apps like Salesforce and Google Drive connecting to Slack"
+            />
+          </div>
+          <div class="integrations-container-header integration-h-1">
+            <h2 class="integrations-container-header-headline">
+              Slack makes other software better
+            </h2>
+            <p class="integrations-container-header-feature">
+              Make your tools more accessible and useful by connecting them all
+              in one place.
+            </p>
+            <ul class="integrations-container-header-homepage-list">
+              <li class="integrations-container-header-homepage-list-item">
+                <span class="item-span"
+                  >Connect over 2,200 ready-to-use Slack apps</span
+                >
+              </li>
+              <li class="integrations-container-header-homepage-list-item">
+                <span class="item-span"
+                  >Build your own time-saving workflows</span
+                >
+              </li>
+              <li class="integrations-container-header-homepage-list-item">
+                <span class="item-span"
+                  >Integrate your internal tools with the Slack APIs</span
+                >
+              </li>
+            </ul>
+            <a href="#" class="feature-text-link"
+              >Learn more about integrations</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section class="integrations">
+        <div class="integrations-container container-2">
+          <div class="integrations-container-image integration-img-2">
+            <img
+              src="https://a.slack-edge.com/a63d2/marketing/img/homepage/hp-prospect/enterprise/enterprise-grade-for-everyone.png"
+              srcset="
+                https://a.slack-edge.com/a63d2/marketing/img/homepage/hp-prospect/enterprise/enterprise-grade-for-everyone.png    1x,
+                https://a.slack-edge.com/d5fd3/marketing/img/homepage/hp-prospect/enterprise/enterprise-grade-for-everyone@2x.png 2x
+              "
+              alt="Illustration of the different components of Slack for enterprise, like security and scale"
+            />
+          </div>
+          <div class="integrations-container-header integration-h-2">
+            <h2 class="integrations-container-header-headline">
+              Slack makes other software better
+            </h2>
+            <p class="integrations-container-header-feature">
+              Make your tools more accessible and useful by connecting them all
+              in one place.
+            </p>
+            <ul class="integrations-container-header-homepage-list">
+              <li class="integrations-container-header-homepage-list-item">
+                <span class="item-span"
+                  >Connect over 2,200 ready-to-use Slack apps</span
+                >
+              </li>
+              <li class="integrations-container-header-homepage-list-item">
+                <span class="item-span"
+                  >Build your own time-saving workflows</span
+                >
+              </li>
+              <li class="integrations-container-header-homepage-list-item">
+                <span class="item-span"
+                  >Integrate your internal tools with the Slack APIs</span
+                >
+              </li>
+            </ul>
+            <a href="#" class="feature-text-link"
+              >Learn more about integrations</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- Get More Section -->
+
+      <section class="get-more">
+        <div class="get-more-container">
+          <h2>Get more out of Slack</h2>
+          <div class="get-more-container-grid">
+            <a href="" class="get-more-card">
+              <figure>
+                <img
+                  src="https://a.slack-edge.com/236db6/marketing/img/promos/slack-101-learning-slack-made-simple.jpg"
+                  srcset="
+                    https://a.slack-edge.com/236db6/marketing/img/promos/slack-101-learning-slack-made-simple.jpg    1x,
+                    https://a.slack-edge.com/236db6/marketing/img/promos/slack-101-learning-slack-made-simple@2x.jpg 2x
+                  "
+                  alt=""
+                />
+              </figure>
+              <header class="get-more-card-header">
+                <span class="get-more-card-header-span">How-to</span>
+                <h3 class="get-more-card-header-h3">
+                  Slack 101: Learning Slack made simple
                 </h3>
-                <div class="footer-top-buttons">
-                    <button class="btn btn-not-filled get-app-btn">Get Slack for Android</button>
-                    <button class="btn btn-filled get-contact-btn">Talk to sales</button>
-                </div>
-            </div>
-        </section>
+              </header>
+              <div class="get-more-card-div">Learn more</div>
+            </a>
+            <a href="" class="get-more-card">
+              <figure>
+                <img
+                  src="https://a.slack-edge.com/64d6c/marketing/img/promos/promo-rimeto.jpg"
+                  srcset="
+                    https://a.slack-edge.com/64d6c/marketing/img/promos/promo-rimeto.jpg    1x,
+                    https://a.slack-edge.com/64d6c/marketing/img/promos/promo-rimeto@2x.jpg 2x
+                  "
+                  alt=""
+                />
+              </figure>
+              <header class="get-more-card-header">
+                <span class="get-more-card-header-span">Blog</span>
+                <h3 class="get-more-card-header-h3">
+                  Reimagining the Company Directory
+                </h3>
+              </header>
+              <div class="get-more-card-div">Learn more</div>
+            </a>
+            <a href="" class="get-more-card">
+              <figure>
+                <img
+                  src="https://a.slack-edge.com/1a292/marketing/img/promos/slack-connect-promo.jpg"
+                  srcset="
+                    https://a.slack-edge.com/1a292/marketing/img/promos/slack-connect-promo.jpg    1x,
+                    https://a.slack-edge.com/1a292/marketing/img/promos/slack-connect-promo@2x.jpg 2x
+                  "
+                  alt=""
+                />
+              </figure>
+              <header class="get-more-card-header">
+                <span class="get-more-card-header-span">Blog</span>
+                <h3 class="get-more-card-header-h3">
+                  Introducing Slack Connect: the future of business
+                  communication
+                </h3>
+              </header>
+              <div class="get-more-card-div">Learn more</div>
+            </a>
+          </div>
+          <div class="get-more-button">
+            <button class="btn btn-not-filled">see all resources</button>
+          </div>
+        </div>
+      </section>
 
-        <!-- *** Footer *** -->
+      <!-- *** Footer Top Section *** -->
 
-        <footer class="footer">
-            <div class="footer-container">
-                <div class="footer-menu">
-                    <a href="#">
-                        <svg width="54" height="54" class="c-nav--footer__svgicon c-slackhash" viewBox="0 0 54 54"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <g fill="none" fill-rule="evenodd">
-                                <path
-                                    d="M19.712.133a5.381 5.381 0 0 0-5.376 5.387 5.381 5.381 0 0 0 5.376 5.386h5.376V5.52A5.381 5.381 0 0 0 19.712.133m0 14.365H5.376A5.381 5.381 0 0 0 0 19.884a5.381 5.381 0 0 0 5.376 5.387h14.336a5.381 5.381 0 0 0 5.376-5.387 5.381 5.381 0 0 0-5.376-5.386"
-                                    fill="#36C5F0"></path>
-                                <path
-                                    d="M53.76 19.884a5.381 5.381 0 0 0-5.376-5.386 5.381 5.381 0 0 0-5.376 5.386v5.387h5.376a5.381 5.381 0 0 0 5.376-5.387m-14.336 0V5.52A5.381 5.381 0 0 0 34.048.133a5.381 5.381 0 0 0-5.376 5.387v14.364a5.381 5.381 0 0 0 5.376 5.387 5.381 5.381 0 0 0 5.376-5.387"
-                                    fill="#2EB67D"></path>
-                                <path
-                                    d="M34.048 54a5.381 5.381 0 0 0 5.376-5.387 5.381 5.381 0 0 0-5.376-5.386h-5.376v5.386A5.381 5.381 0 0 0 34.048 54m0-14.365h14.336a5.381 5.381 0 0 0 5.376-5.386 5.381 5.381 0 0 0-5.376-5.387H34.048a5.381 5.381 0 0 0-5.376 5.387 5.381 5.381 0 0 0 5.376 5.386"
-                                    fill="#ECB22E"></path>
-                                <path
-                                    d="M0 34.249a5.381 5.381 0 0 0 5.376 5.386 5.381 5.381 0 0 0 5.376-5.386v-5.387H5.376A5.381 5.381 0 0 0 0 34.25m14.336-.001v14.364A5.381 5.381 0 0 0 19.712 54a5.381 5.381 0 0 0 5.376-5.387V34.25a5.381 5.381 0 0 0-5.376-5.387 5.381 5.381 0 0 0-5.376 5.387"
-                                    fill="#E01E5A"></path>
-                            </g>
-                        </svg>
-                    </a>
-                    <nav class="footer-nav">
-                        <ul class="footer-nav-list">
-                            <li class="footer-nav-list-item" data-index="1">
-                                <span data-index="1">WHY SLACK ?</span>
-                                <ul class="footer-nav-link">
-                                    <li>
-                                        <a href="#">Slack vs. Email</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Channels</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Engagement</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Scale</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Watch the Demo</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="footer-nav-list-item" data-index="2">
-                                <span data-index="2">PRODUCT</span>
-                                <ul class="footer-nav-link">
-                                    <li>
-                                        <a href="#">Features</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Integration</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Enterprise</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Solutions</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            </li>
-                            <li class="footer-nav-list-item" data-index="3">
-                                <span data-index="3">PRICING</span>
-                                <ul class="footer-nav-link">
-                                    <li>
-                                        <a href="#">Plans</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Paid vs. Free</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            </li>
-                            <li class="footer-nav-list-item" data-index="4">
-                                <span data-index="4">RESOURCES</span>
-                                <ul class="footer-nav-link">
-                                    <li>
-                                        <a href="#">Partners</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Developers</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Apps</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Blogs</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Help Center</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Events</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            </li>
-                            <li class="footer-nav-list-item" data-index="5">
-                                <span data-index="5">COMPANY</span>
-                                <ul class="footer-nav-link">
-                                    <li>
-                                        <a href="#">About Us</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Leadership</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Investor Relations</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">News</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Media Kit</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Careers</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-                <div class="footer-bottom">
-                    <ul class="footer-bottom-nav-list">
-                        <li class="footer-bottom-nav-list-item">
-                            <a href="#" class="footer-bottom-nav-link">Status</a>
-                        </li>
-                        <li class="footer-bottom-nav-list-item">
-                            <a href="#" class="footer-bottom-nav-link">Privacy & Terms</a>
+      <section class="footer-top">
+        <div class="footer-top-container">
+          <h3 class="footer-top-heading">Choose a better way to work</h3>
+          <div class="footer-top-buttons">
+            <button class="btn btn-not-filled get-app-btn">
+              Get Slack for Android
+            </button>
+            <button class="btn btn-filled get-contact-btn">
+              Talk to sales
+            </button>
+          </div>
+        </div>
+      </section>
 
-                        </li>
-                        <li class="footer-bottom-nav-list-item">
-                            <a href="#" class="footer-bottom-nav-link">Contact Us</a>
+      <!-- *** Footer *** -->
 
-                        </li>
-                        <li class="footer-bottom-nav-list-item">
-                            <a href="#" class="footer-bottom-nav-link region-switcher">
-                                <svg class="world-icon" width="18" height="18" viewBox="0 0 100 100">
-                                    <path
-                                        d="M50.008 5.874c-11.308 0-22.613 4.3-31.219 12.906-17.211 17.211-17.211 45.226 0 62.438 17.211 17.21 45.195 17.21 62.406 0 17.212-17.212 17.243-45.227.032-62.438-8.606-8.606-19.912-12.906-31.22-12.906zm-3.125 6.125h.125v34.969H28.914c.58-10.29 4.095-20.385 10.594-28.157 2.27-2.715 4.757-4.983 7.375-6.812zm6.125 0h.062a38 38 0 0 1 7.407 6.812c6.498 7.772 10.014 17.866 10.593 28.157H53.008v-34.97zm-18.094 2.937c-7.508 8.978-11.557 20.412-12.156 32.032H11.977c.687-8.725 4.343-17.25 11.03-23.938a38.166 38.166 0 0 1 11.907-8.094zm30.219.062a38.176 38.176 0 0 1 11.812 8.063c6.685 6.685 10.369 15.19 11.063 23.906H77.227c-.598-11.59-4.623-23-12.094-31.969zm-53.156 37.97h10.78c.59 11.638 4.638 23.07 12.157 32.062a38.133 38.133 0 0 1-11.875-8.063c-6.7-6.7-10.376-15.258-11.062-24zm16.937 0h18.094V88.03h-.063c-2.644-1.838-5.146-4.135-7.437-6.875-6.512-7.787-10.025-17.876-10.594-28.188zm24.094 0H71.07c-.568 10.31-4.082 20.4-10.593 28.187-2.298 2.747-4.817 5.034-7.47 6.875V52.967zm24.219 0h10.812c-.679 8.741-4.39 17.295-11.094 24A38.07 38.07 0 0 1 65.04 85.06c.01-.011.022-.02.031-.031 7.52-8.992 11.568-20.424 12.157-32.063z">
-                                    </path>
-                                </svg>
-                                <span>Change Region</span>
-                                <svg class="arrow-down" xmlns="http://www.w3.org/2000/svg" width="8" height="5"
-                                    viewBox="0 0 8 5" fill="#1d1d1d">
-                                    <path d="M7 1L4 4L1 1" stroke="#1D1C1D" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round" />
-                                </svg>
-                            </a>
-                        </li>
-                    </ul>
-                    <a class="download-slack" href="#">Download Slack</a>
-                    <ul class="footer-bottom-social-list">
-                        <li class="footer-bottom-social-list-item">
-                            <a href="#">
-                                <svg class="c-nav--footer__svgicon" width="20" height="20" version="1"
-                                    viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M31.993 6.077c-1.177.523-2.44.876-3.77 1.033 1.355-.812 2.396-2.098 2.887-3.63-1.27.75-2.673 1.3-4.168 1.592C25.744 3.797 24.038 3 22.15 3c-3.626 0-6.563 2.938-6.563 6.563 0 .514.057 1.016.17 1.496C10.3 10.783 5.464 8.17 2.227 4.2c-.565.97-.89 2.098-.89 3.3 0 2.28 1.16 4.287 2.92 5.465-1.076-.035-2.088-.33-2.973-.82v.08c0 3.182 2.26 5.835 5.264 6.438-.55.15-1.13.23-1.73.23-.423 0-.833-.04-1.233-.117.834 2.606 3.26 4.504 6.13 4.558-2.245 1.76-5.075 2.81-8.15 2.81-.53 0-1.053-.03-1.566-.09C2.905 27.914 6.355 29 10.062 29c12.072 0 18.675-10 18.675-18.675 0-.284-.008-.568-.02-.85 1.283-.925 2.395-2.08 3.276-3.398z">
-                                    </path>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="footer-bottom-social-list-item">
-                            <a href="#"><svg class="c-nav--footer__svgicon" width="20" height="20" viewBox="0 0 16 16"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M15.115 0H.885A.883.883 0 0 0 0 .885v14.23c0 .49.395.885.885.885h7.659V9.803h-2.09v-2.4h2.09V5.62c0-2.069 1.27-3.189 3.104-3.189.875 0 1.643.053 1.867.096v2.155h-1.291c-1.003 0-1.184.469-1.184 1.173v1.547h2.379l-.31 2.4H11.04V16h4.075c.49 0 .885-.395.885-.885V.885A.883.883 0 0 0 15.115 0z"
-                                        fill-rule="evenodd"></path>
-                                </svg></a>
-                        </li>
-                        <li class="footer-bottom-social-list-item">
-                            <a href="#"><svg version="1" class="c-nav--footer__svgicon" width="20" height="20"
-                                    viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M31.67 9.18s-.312-2.354-1.27-3.39c-1.218-1.358-2.58-1.366-3.206-1.443C22.717 4 16.002 4 16.002 4h-.015s-6.715 0-11.19.347c-.626.077-1.988.085-3.206 1.443C.635 6.826.32 9.18.32 9.18S0 11.94 0 14.7v2.59c0 2.762.32 5.522.32 5.522s.312 2.352 1.27 3.386c1.22 1.358 2.816 1.317 3.528 1.46 2.56.26 10.877.342 10.877.342s6.722-.012 11.2-.355c.624-.08 1.987-.088 3.204-1.446.956-1.036 1.27-3.388 1.27-3.388s.32-2.76.32-5.523V14.7c0-2.76-.32-5.522-.32-5.522z">
-                                    </path>
-                                    <path fill="#FFF" d="M12 10v12l10-6"></path>
-                                </svg></a>
-                        </li>
-                        <li class="footer-bottom-social-list-item">
-                            <a href="#">
-                                <svg class="c-nav--footer__svgicon" width="20" height="20" viewBox="0 0 16 16"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M14.816 0C15.466 0 16 .512 16 1.152v13.696c0 .63-.533 1.152-1.184 1.152H1.184C.534 16 0 15.477 0 14.848V1.152C0 .512.533 0 1.184 0zM3.563 4.96a1.382 1.382 0 0 0 0-2.763c-.768 0-1.376.619-1.376 1.376 0 .768.608 1.387 1.376 1.387zm10.069 4.49c0-2.058-.437-3.637-2.848-3.637-1.152 0-1.92.63-2.24 1.227h-.032V5.995H6.24v7.637h2.368V9.856c0-.992.181-1.963 1.419-1.963 1.216 0 1.237 1.142 1.237 2.027v3.712h2.368zM2.368 13.633h2.379V5.995H2.368z"
-                                        fill-rule="evenodd"></path>
-                                </svg>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="footer-legal">
-                    <span>© Copyright 2021 Slack Technologies, Inc. All rights reserved. Various trademarks held by
-                        their respective owners.
-                    </span>
-                </div>
-            </div>
-        </footer>
+      <footer class="footer">
+        <div class="footer-container">
+          <div class="footer-menu">
+            <a href="#">
+              <svg
+                width="54"
+                height="54"
+                class="c-nav--footer__svgicon c-slackhash"
+                viewBox="0 0 54 54"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g fill="none" fill-rule="evenodd">
+                  <path
+                    d="M19.712.133a5.381 5.381 0 0 0-5.376 5.387 5.381 5.381 0 0 0 5.376 5.386h5.376V5.52A5.381 5.381 0 0 0 19.712.133m0 14.365H5.376A5.381 5.381 0 0 0 0 19.884a5.381 5.381 0 0 0 5.376 5.387h14.336a5.381 5.381 0 0 0 5.376-5.387 5.381 5.381 0 0 0-5.376-5.386"
+                    fill="#36C5F0"
+                  ></path>
+                  <path
+                    d="M53.76 19.884a5.381 5.381 0 0 0-5.376-5.386 5.381 5.381 0 0 0-5.376 5.386v5.387h5.376a5.381 5.381 0 0 0 5.376-5.387m-14.336 0V5.52A5.381 5.381 0 0 0 34.048.133a5.381 5.381 0 0 0-5.376 5.387v14.364a5.381 5.381 0 0 0 5.376 5.387 5.381 5.381 0 0 0 5.376-5.387"
+                    fill="#2EB67D"
+                  ></path>
+                  <path
+                    d="M34.048 54a5.381 5.381 0 0 0 5.376-5.387 5.381 5.381 0 0 0-5.376-5.386h-5.376v5.386A5.381 5.381 0 0 0 34.048 54m0-14.365h14.336a5.381 5.381 0 0 0 5.376-5.386 5.381 5.381 0 0 0-5.376-5.387H34.048a5.381 5.381 0 0 0-5.376 5.387 5.381 5.381 0 0 0 5.376 5.386"
+                    fill="#ECB22E"
+                  ></path>
+                  <path
+                    d="M0 34.249a5.381 5.381 0 0 0 5.376 5.386 5.381 5.381 0 0 0 5.376-5.386v-5.387H5.376A5.381 5.381 0 0 0 0 34.25m14.336-.001v14.364A5.381 5.381 0 0 0 19.712 54a5.381 5.381 0 0 0 5.376-5.387V34.25a5.381 5.381 0 0 0-5.376-5.387 5.381 5.381 0 0 0-5.376 5.387"
+                    fill="#E01E5A"
+                  ></path>
+                </g>
+              </svg>
+            </a>
+            <nav class="footer-nav">
+              <ul class="footer-nav-list">
+                <li class="footer-nav-list-item" data-index="1">
+                  <span data-index="1">WHY SLACK ?</span>
+                  <ul class="m-footer-nav-link footer-nav-link">
+                    <li>
+                      <a href="#">Slack vs. Email</a>
+                    </li>
+                    <li>
+                      <a href="#">Channels</a>
+                    </li>
+                    <li>
+                      <a href="#">Engagement</a>
+                    </li>
+                    <li>
+                      <a href="#">Scale</a>
+                    </li>
+                    <li>
+                      <a href="#">Watch the Demo</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="footer-nav-list-item" data-index="2">
+                  <span data-index="2">PRODUCT</span>
+                  <ul class="m-footer-nav-link footer-nav-link">
+                    <li>
+                      <a href="#">Features</a>
+                    </li>
+                    <li>
+                      <a href="#">Integration</a>
+                    </li>
+                    <li>
+                      <a href="#">Enterprise</a>
+                    </li>
+                    <li>
+                      <a href="#">Solutions</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="footer-nav-list-item" data-index="3">
+                  <span data-index="3">PRICING</span>
+                  <ul class="m-footer-nav-link footer-nav-link">
+                    <li>
+                      <a href="#">Plans</a>
+                    </li>
+                    <li>
+                      <a href="#">Paid vs. Free</a>
+                    </li>
+                  </ul>
+                </li>
 
+                <li class="footer-nav-list-item" data-index="4">
+                  <span data-index="4">RESOURCES</span>
+                  <ul class="m-footer-nav-link footer-nav-link">
+                    <li>
+                      <a href="#">Partners</a>
+                    </li>
+                    <li>
+                      <a href="#">Developers</a>
+                    </li>
+                    <li>
+                      <a href="#">Apps</a>
+                    </li>
+                    <li>
+                      <a href="#">Blogs</a>
+                    </li>
+                    <li>
+                      <a href="#">Help Center</a>
+                    </li>
+                    <li>
+                      <a href="#">Events</a>
+                    </li>
+                  </ul>
+                </li>
 
+                <li class="footer-nav-list-item" data-index="5">
+                  <span data-index="5">COMPANY</span>
+                  <ul class="m-footer-nav-link footer-nav-link">
+                    <li>
+                      <a href="#">About Us</a>
+                    </li>
+                    <li>
+                      <a href="#">Leadership</a>
+                    </li>
+                    <li>
+                      <a href="#">Investor Relations</a>
+                    </li>
+                    <li>
+                      <a href="#">News</a>
+                    </li>
+                    <li>
+                      <a href="#">Media Kit</a>
+                    </li>
+                    <li>
+                      <a href="#">Careers</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="footer-bottom">
+            <ul class="footer-bottom-nav-list">
+              <li class="footer-bottom-nav-list-item">
+                <a href="#" class="footer-bottom-nav-link">Status</a>
+              </li>
+              <li class="footer-bottom-nav-list-item">
+                <a href="#" class="footer-bottom-nav-link">Privacy & Terms</a>
+              </li>
+              <li class="footer-bottom-nav-list-item">
+                <a href="#" class="footer-bottom-nav-link">Contact Us</a>
+              </li>
+              <li class="footer-bottom-nav-list-item">
+                <a href="#" class="footer-bottom-nav-link region-switcher">
+                  <svg
+                    class="world-icon"
+                    width="18"
+                    height="18"
+                    viewBox="0 0 100 100"
+                  >
+                    <path
+                      d="M50.008 5.874c-11.308 0-22.613 4.3-31.219 12.906-17.211 17.211-17.211 45.226 0 62.438 17.211 17.21 45.195 17.21 62.406 0 17.212-17.212 17.243-45.227.032-62.438-8.606-8.606-19.912-12.906-31.22-12.906zm-3.125 6.125h.125v34.969H28.914c.58-10.29 4.095-20.385 10.594-28.157 2.27-2.715 4.757-4.983 7.375-6.812zm6.125 0h.062a38 38 0 0 1 7.407 6.812c6.498 7.772 10.014 17.866 10.593 28.157H53.008v-34.97zm-18.094 2.937c-7.508 8.978-11.557 20.412-12.156 32.032H11.977c.687-8.725 4.343-17.25 11.03-23.938a38.166 38.166 0 0 1 11.907-8.094zm30.219.062a38.176 38.176 0 0 1 11.812 8.063c6.685 6.685 10.369 15.19 11.063 23.906H77.227c-.598-11.59-4.623-23-12.094-31.969zm-53.156 37.97h10.78c.59 11.638 4.638 23.07 12.157 32.062a38.133 38.133 0 0 1-11.875-8.063c-6.7-6.7-10.376-15.258-11.062-24zm16.937 0h18.094V88.03h-.063c-2.644-1.838-5.146-4.135-7.437-6.875-6.512-7.787-10.025-17.876-10.594-28.188zm24.094 0H71.07c-.568 10.31-4.082 20.4-10.593 28.187-2.298 2.747-4.817 5.034-7.47 6.875V52.967zm24.219 0h10.812c-.679 8.741-4.39 17.295-11.094 24A38.07 38.07 0 0 1 65.04 85.06c.01-.011.022-.02.031-.031 7.52-8.992 11.568-20.424 12.157-32.063z"
+                    ></path>
+                  </svg>
+                  <span>Change Region</span>
+                  <svg
+                    class="arrow-down"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="8"
+                    height="5"
+                    viewBox="0 0 8 5"
+                    fill="#1d1d1d"
+                  >
+                    <path
+                      d="M7 1L4 4L1 1"
+                      stroke="#1D1C1D"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+            <a class="download-slack" href="#">Download Slack</a>
+            <ul class="footer-bottom-social-list">
+              <li class="footer-bottom-social-list-item">
+                <a href="#">
+                  <svg
+                    class="c-nav--footer__svgicon"
+                    width="20"
+                    height="20"
+                    version="1"
+                    viewBox="0 0 32 32"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M31.993 6.077c-1.177.523-2.44.876-3.77 1.033 1.355-.812 2.396-2.098 2.887-3.63-1.27.75-2.673 1.3-4.168 1.592C25.744 3.797 24.038 3 22.15 3c-3.626 0-6.563 2.938-6.563 6.563 0 .514.057 1.016.17 1.496C10.3 10.783 5.464 8.17 2.227 4.2c-.565.97-.89 2.098-.89 3.3 0 2.28 1.16 4.287 2.92 5.465-1.076-.035-2.088-.33-2.973-.82v.08c0 3.182 2.26 5.835 5.264 6.438-.55.15-1.13.23-1.73.23-.423 0-.833-.04-1.233-.117.834 2.606 3.26 4.504 6.13 4.558-2.245 1.76-5.075 2.81-8.15 2.81-.53 0-1.053-.03-1.566-.09C2.905 27.914 6.355 29 10.062 29c12.072 0 18.675-10 18.675-18.675 0-.284-.008-.568-.02-.85 1.283-.925 2.395-2.08 3.276-3.398z"
+                    ></path>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-bottom-social-list-item">
+                <a href="#"
+                  ><svg
+                    class="c-nav--footer__svgicon"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 16 16"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M15.115 0H.885A.883.883 0 0 0 0 .885v14.23c0 .49.395.885.885.885h7.659V9.803h-2.09v-2.4h2.09V5.62c0-2.069 1.27-3.189 3.104-3.189.875 0 1.643.053 1.867.096v2.155h-1.291c-1.003 0-1.184.469-1.184 1.173v1.547h2.379l-.31 2.4H11.04V16h4.075c.49 0 .885-.395.885-.885V.885A.883.883 0 0 0 15.115 0z"
+                      fill-rule="evenodd"
+                    ></path></svg
+                ></a>
+              </li>
+              <li class="footer-bottom-social-list-item">
+                <a href="#"
+                  ><svg
+                    version="1"
+                    class="c-nav--footer__svgicon"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 32 32"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M31.67 9.18s-.312-2.354-1.27-3.39c-1.218-1.358-2.58-1.366-3.206-1.443C22.717 4 16.002 4 16.002 4h-.015s-6.715 0-11.19.347c-.626.077-1.988.085-3.206 1.443C.635 6.826.32 9.18.32 9.18S0 11.94 0 14.7v2.59c0 2.762.32 5.522.32 5.522s.312 2.352 1.27 3.386c1.22 1.358 2.816 1.317 3.528 1.46 2.56.26 10.877.342 10.877.342s6.722-.012 11.2-.355c.624-.08 1.987-.088 3.204-1.446.956-1.036 1.27-3.388 1.27-3.388s.32-2.76.32-5.523V14.7c0-2.76-.32-5.522-.32-5.522z"
+                    ></path>
+                    <path fill="#FFF" d="M12 10v12l10-6"></path></svg
+                ></a>
+              </li>
+              <li class="footer-bottom-social-list-item">
+                <a href="#">
+                  <svg
+                    class="c-nav--footer__svgicon"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 16 16"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M14.816 0C15.466 0 16 .512 16 1.152v13.696c0 .63-.533 1.152-1.184 1.152H1.184C.534 16 0 15.477 0 14.848V1.152C0 .512.533 0 1.184 0zM3.563 4.96a1.382 1.382 0 0 0 0-2.763c-.768 0-1.376.619-1.376 1.376 0 .768.608 1.387 1.376 1.387zm10.069 4.49c0-2.058-.437-3.637-2.848-3.637-1.152 0-1.92.63-2.24 1.227h-.032V5.995H6.24v7.637h2.368V9.856c0-.992.181-1.963 1.419-1.963 1.216 0 1.237 1.142 1.237 2.027v3.712h2.368zM2.368 13.633h2.379V5.995H2.368z"
+                      fill-rule="evenodd"
+                    ></path>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-legal">
+            <span
+              >© Copyright 2021 Slack Technologies, Inc. All rights reserved.
+              Various trademarks held by their respective owners.
+            </span>
+          </div>
+        </div>
+      </footer>
     </main>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.transit/0.9.12/jquery.transit.min.js"></script>
     <script src="assets/js/index.js"></script>
-</body>
-
+  </body>
 </html>
